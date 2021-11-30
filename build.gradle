@@ -1,0 +1,16 @@
+plugins {
+    id "java"
+    id "idea"
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+     implementation "org.apache.avro:avro:${avro_version}"
+     testImplementation "junit:junit:${junit_version}"
+}
